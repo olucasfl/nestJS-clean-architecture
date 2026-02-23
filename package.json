@@ -32,7 +32,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
-    "@faker-js/faker": "^8.4.1",
+    "@faker-js/faker": "^10.3.0",
     "@nestjs/cli": "^1.8.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.1.14",
@@ -40,7 +40,7 @@
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.7",
     "@types/supertest": "^6.0.2",
-    "eslint": "^9.39.2",
+    "eslint": "^4.1.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^2.7.0",
     "globals": "^16.0.0",
@@ -65,6 +65,9 @@
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/$1"
     },
     "collectCoverageFrom": [
       "**/*.(t|j)s"
